@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <h1>REGISTRATION SUCCESS!!!</h1>
+  <button id="information"></button>
+  <div>NAME: <span id="n"></span> </div>
+  <div>EMAIL: <span id="e"></span> </div>
+  <div>PASSWORD <span id="p"></span> </div>
+  <script>
+    document.getElementById("n").innerHTML = localStorage.getItem("name");
+    document.getElementById("e").innerHTML = localStorage.getItem("email");
+    document.getElementById("p").innerHTML = localStorage.getItem("password");
+  </script>
+
+</body>
+
+</html>
